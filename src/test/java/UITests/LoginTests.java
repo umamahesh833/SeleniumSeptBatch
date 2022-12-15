@@ -23,5 +23,14 @@ public class LoginTests {
 		WebDriver driver = new ChromeDriver();		
 		
 	}
+	
+	@Test
+	public void TesHomeScreen() {
+		
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\SeleniumSept\\chromedriver_win32\\chromedriver.exe");		
+		WebDriver driver = new ChromeDriver();		
+		
+	}
 
 }
