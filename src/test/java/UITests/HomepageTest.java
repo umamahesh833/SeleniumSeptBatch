@@ -72,13 +72,6 @@ public class HomepageTest {
 		
 		System.out.println("Home page fields");
 	}
-	
-	
-	@Test
-	public void TestMyCartPage() {
-		
-		System.out.println("TestMyCartPage");
-	}
 
 
 }
