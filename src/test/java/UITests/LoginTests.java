@@ -129,5 +129,12 @@ public class LoginTests {
 	public void fnQuit() {
 		driver.quit();
 	}
+	
+	@Test
+	public void TestAddtoCart() {
+		
+	System.out.println("added new test case");	
+		
+	}
 
 }
