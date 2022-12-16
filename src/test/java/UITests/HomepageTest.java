@@ -35,11 +35,7 @@ public class HomepageTest {
 		System.out.println("TestMyCartPage");
 	}
 
-	@Test
-	public void TestMyCartPage() {
-
-		System.out.println("TestMyCartPage");
-	}
+	
 
 	@Test(priority = 0)
 	public void AddToCart() {
