@@ -32,5 +32,12 @@ public class LoginTests {
 		WebDriver driver = new ChromeDriver();		
 		
 	}
+	
+	@Test
+	public void TestAddtoCart() {
+		
+	System.out.println("added new test case");	
+		
+	}
 
 }
