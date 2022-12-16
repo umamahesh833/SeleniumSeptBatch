@@ -1,7 +1,10 @@
 package UITests;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 public class LoginTests {
@@ -23,6 +26,15 @@ public class LoginTests {
 		WebDriver driver = new ChromeDriver();		
 		
 	}
+	public void fnGoToCart() {
+		   WebElement cart = driver.findElement(By.xpath("//a[@class='action showcart']"));
+		   Actions act = new Actions(driver); //Actions object creation
+		   act.moveToElement(cart).build().perform();
+		   cart.click();
+		   WebElement viewEditcart = driver.findElement(By.xpath("//a[@class='action viewcart']"));
+		   act.moveToElement(viewEditcart).build().perform();
+		   viewEditcart.click();
+	   }
 	
 	@Test
 	public void TesHomeScreen() {
