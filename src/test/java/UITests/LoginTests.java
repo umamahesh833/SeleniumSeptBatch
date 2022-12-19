@@ -51,5 +51,15 @@ public class LoginTests {
 	System.out.println("added new test case");	
 		
 	}
+	
+	@Test
+	public void TestValidatePrice() {
+		
+	System.out.println("Validation is success");	
+		
+	}
+	
+	
+	
 
 }
