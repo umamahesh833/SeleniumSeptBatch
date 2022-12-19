@@ -129,5 +129,15 @@ public class LoginTests {
 	public void fnQuit() {
 		driver.quit();
 	}
+	
+	@Test
+	public void TestValidatePrice() {
+		
+	System.out.println("Validation is success");	
+		
+	}
+	
+	
+	
 
 }
