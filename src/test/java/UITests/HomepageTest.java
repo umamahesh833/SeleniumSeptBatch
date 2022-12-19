@@ -5,50 +5,59 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import Methods.BrowserMethods;
+import PageObjects.CartPage;
+import PageObjects.CustomerLoginPage;
+import PageObjects.HomePage;
+import PageObjects.HompageLogin;
+import PageObjects.Watches;
+
 public class HomepageTest {
-	LoginTests ObjMethods = new LoginTests();
+	WebDriver driver;
 
-	@Test
-	public void TestHomepageTitle() {
-
-		System.out.println("Home page tests");
-	}
-
-	@Test
-	public void TestHomepageLink() {
-
-		System.out.println("Home page link");
-	}
-
-	@Test
-	public void TestHomepagefileds() {
-
-		System.out.println("Home page fields");
-	}
 	
-	
-	@Test
-	public void TestMyCartPage() {
-		
-		System.out.println("TestMyCartPage");
-	}
+	@BeforeMethod
+	public void fnLaunchBrowser() {
 
+		System.setProperty("webdriver.chrome.driver", "C:\\SeleniumSept\\chromedriver_win32\\chromedriver.exe");
+		driver = new ChromeDriver();
+
+	}
 	
 
 	@Test(priority = 0)
-	public void AddToCart() {
-		ObjMethods.fnLaunchApplication();
-		ObjMethods.fnLogin();
-		ObjMethods.fnNavToGearWatches();
-		ObjMethods.fnSelectWatch();
-		ObjMethods.fnGoToCart();
-		ObjMethods.fnValidateProductName(By.xpath("//table[@id='shopping-cart-table']/tbody[2]/tr[1]/td[1]/div/strong"),
+	public void TestAddToCart() {
+		BrowserMethods Browser = new BrowserMethods(driver);
+		HomePage Homepage = new HomePage(driver);
+		CustomerLoginPage LoginPage = new CustomerLoginPage(driver);
+		HompageLogin LoginHomePage = new HompageLogin(driver);
+		Watches WatchesPage = new Watches(driver);
+		CartPage Cartpage = new CartPage(driver);
+		
+		
+		
+		Browser.fnMaximize();
+		Browser.fnWaitTimes();
+		Browser.fnNavigateURL();
+		
+		Homepage.ClickSignIn();
+		
+		LoginPage.EnterUsername();
+		LoginPage.EnterPassword();
+		LoginPage.ClicOnSignIn();
+		
+		LoginHomePage.fnNavToGearWatches();
+		WatchesPage.fnSelectWatch();
+		WatchesPage.fnGoToCart();
+		
+		Cartpage.FnValidateProductName(By.xpath("//table[@id='shopping-cart-table']/tbody[2]/tr[1]/td[1]/div/strong"),
 				"Aim Analog Watch");
-		ObjMethods.fnValPrice(By.xpath("//table[@id='shopping-cart-table']/tbody[2]/tr[1]/td[4]/span/span/span"),
+	
+		Cartpage.FnValidatePrice(By.xpath("//table[@id='shopping-cart-table']/tbody[2]/tr[1]/td[4]/span/span/span"),
 				"$45.00");
-		ObjMethods.fnQuit();
 
 	}
 

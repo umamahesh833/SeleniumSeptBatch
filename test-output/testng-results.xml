@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="2920" started-at="2022-12-14T16:19:54Z" finished-at="2022-12-14T16:19:57Z">
+  <suite name="Default suite" duration-ms="6735" started-at="2022-12-19T16:57:23Z" finished-at="2022-12-19T16:57:30Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="2920" started-at="2022-12-14T16:19:54Z" finished-at="2022-12-14T16:19:57Z">
-      <class name="UITests.LoginTests">
-        <test-method status="PASS" signature="TestLogOut()[pri:0, instance:UITests.LoginTests@15bb6bea]" name="TestLogOut" duration-ms="1676" started-at="2022-12-14T16:19:54Z" finished-at="2022-12-14T16:19:56Z">
+    <test name="Default test" duration-ms="6735" started-at="2022-12-19T16:57:23Z" finished-at="2022-12-19T16:57:30Z">
+      <class name="UITests.HomepageTest">
+        <test-method status="PASS" signature="fnLaunchBrowser()[pri:0, instance:UITests.HomepageTest@67e2d983]" name="fnLaunchBrowser" is-config="true" duration-ms="1333" started-at="2022-12-19T16:57:23Z" finished-at="2022-12-19T16:57:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestLogOut -->
-        <test-method status="PASS" signature="TestLogin()[pri:0, instance:UITests.LoginTests@15bb6bea]" name="TestLogin" duration-ms="1224" started-at="2022-12-14T16:19:56Z" finished-at="2022-12-14T16:19:57Z">
+        </test-method> <!-- fnLaunchBrowser -->
+        <test-method status="PASS" signature="TestAddToCart()[pri:0, instance:UITests.HomepageTest@67e2d983]" name="TestAddToCart" duration-ms="5382" started-at="2022-12-19T16:57:25Z" finished-at="2022-12-19T16:57:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestLogin -->
-      </class> <!-- UITests.LoginTests -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- TestAddToCart -->
+      </class> <!-- UITests.HomepageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
