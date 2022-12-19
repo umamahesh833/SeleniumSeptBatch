@@ -24,6 +24,8 @@ public class HomepageTest {
 
 		System.setProperty("webdriver.chrome.driver", "C:\\SeleniumSept\\chromedriver_win32\\chromedriver.exe");
 		driver = new ChromeDriver();
+		
+		
 
 	}
 	
