@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6735" started-at="2022-12-19T16:57:23Z" finished-at="2022-12-19T16:57:30Z">
+  <suite started-at="2022-12-20T13:36:59Z" name="Default suite" finished-at="2022-12-20T13:37:37Z" duration-ms="37440">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6735" started-at="2022-12-19T16:57:23Z" finished-at="2022-12-19T16:57:30Z">
+    <test started-at="2022-12-20T13:36:59Z" name="Default test" finished-at="2022-12-20T13:37:37Z" duration-ms="37440">
       <class name="UITests.HomepageTest">
-        <test-method status="PASS" signature="fnLaunchBrowser()[pri:0, instance:UITests.HomepageTest@67e2d983]" name="fnLaunchBrowser" is-config="true" duration-ms="1333" started-at="2022-12-19T16:57:23Z" finished-at="2022-12-19T16:57:25Z">
+        <test-method is-config="true" signature="fnLaunchBrowser()[pri:0, instance:UITests.HomepageTest@282cb7c7]" started-at="2022-12-20T13:36:59Z" name="fnLaunchBrowser" finished-at="2022-12-20T13:37:02Z" duration-ms="2377" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fnLaunchBrowser -->
-        <test-method status="PASS" signature="TestAddToCart()[pri:0, instance:UITests.HomepageTest@67e2d983]" name="TestAddToCart" duration-ms="5382" started-at="2022-12-19T16:57:25Z" finished-at="2022-12-19T16:57:30Z">
+        <test-method signature="TestAddToCart()[pri:0, instance:UITests.HomepageTest@282cb7c7]" started-at="2022-12-20T13:37:02Z" name="TestAddToCart" finished-at="2022-12-20T13:37:37Z" duration-ms="35001" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestAddToCart -->
